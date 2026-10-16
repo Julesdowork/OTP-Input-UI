@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>One-Time Password Input UI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Enter Verification Code</h1>
+        <p class="subtitle">We've sent a 6-digit code to your device</p>
+
+        <div class="otp-container">
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            class="otp-input"
+            maxlength="1"
+            inputmode="numeric"
+          />
+        </div>
+        <button class="resend-btn" id="resendBtn">Resend Code</button>
+
+        <!-- feedback UI (shown when code is complete) -->
+        <div class="feedback-ui hidden" id="feedbackUI">
+          <div class="success-icon">✓</div>
+          <h2>Code Verified!</h2>
+          <p class="feedback-message">
+            Your verification code has been successfully verified.
+          </p>
+          <button class="continue-btn" id="continueBtn">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
